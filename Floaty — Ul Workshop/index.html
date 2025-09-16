@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Floaty — UI Workshop (Float-based layout)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="title">Floaty — UI Workshop</div>
+      <div class="subtitle">Simple, elegant layout built with floats</div>
+      <button class="get-started">Get Started</button>
+    </header>
+
+    <div class="layout clearfix">
+      <aside class="sidebar">
+        <strong>Menu</strong>
+        <ul>
+          <li>Overview</li>
+          <li>Features</li>
+          <li>Tutorials</li>
+          <li>Resources</li>
+          <li>Contact</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="hero">
+          <h1>Build responsive layouts with just floats</h1>
+          <p>This demo uses floats for structure and modern styles (rounded corners, subtle shadows, gradients) for a polished look.</p>
+        </div>
+
+        <div class="features clearfix">
+          <div class="card">
+            <h3>Lightweight</h3>
+            <p>No heavy frameworks — pure HTML + CSS with float-driven layout.</p>
+          </div>
+          <div class="card">
+            <h3>Customizable</h3>
+            <p>Easily change colors, borders, and background to match your brand.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive</h3>
+            <p>Media queries stack floated columns on small screens for readability.</p>
+          </div>
+        </div>
+
+        <div class="lower clearfix">
+          <div class="circle" aria-hidden="true"></div>
+          <div class="why">
+            <h3>Why floats still matter</h3>
+            <p>Floats were the original way to build multi-column layouts. They are simple, well-supported, and still useful for specific layout patterns — like this sidebar + content page and card grids. Use them when you need predictable flow and wide browser compatibility.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

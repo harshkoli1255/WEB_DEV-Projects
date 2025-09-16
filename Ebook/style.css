@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: #eaeaea;
+  line-height: 1.8;
+  background: url("https://initiate.alphacoders.com/download/images2/831309/png") no-repeat center fixed;
+  background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 15, 40, 0.95);
+    display: flex;
+    justify-content: center;
+    padding: 14px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 10;
+    backdrop-filter: blur(8px);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+nav a {
+  margin: 0 18px;
+  color: #ffe066;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffdd33;
+  text-shadow: 0 0 8px rgba(255, 224, 102, 0.9);
+}
+
+#home {
+  font-weight: bold;
+  color: #fff;
+}
+
+.main {
+  width: 85%;
+  max-width: 1000px;
+  margin: 110px auto 60px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  position: relative;
+}
+
+section {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffe066, transparent);
+  opacity: 0.7;
+  border-radius: 2px;
+}
+
+.p {
+  position: sticky;
+  top: 90px;
+  background: linear-gradient(135deg, #ffe066, #ffb347);
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #222;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  display: inline-block;
+  margin-left: -252px;
+}
+
+.p:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffdd33, #ffaa33);
+}
+
+.content {
+  text-align: justify;
+  margin-bottom: 45px;
+  font-size: 18px;
+  color: #f9f9f9;
+  line-height: 1.9;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ffe066, transparent);
+  margin: 50px 0;
+  opacity: 0.8;
+}
+
+::selection {
+  background: #ffe066;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
