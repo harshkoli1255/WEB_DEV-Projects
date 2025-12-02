@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; gap: 25px; color: black;">
+                <img src="tic-tac-toe.png" alt="" class="logo">
+                <span>MyTicTacToe</span>
+            </a>
+        </div>
+        <div class="themeContainer">
+            <i class="fa-sharp fa-solid fa-circle-half-stroke themeBtn" id="themeBtn"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <span class="gameName" id="gameName">Tic Tac Toe</span>
+        <div class="whosTurn">
+            <span id="whosTurn">X Turn</span>
+        </div>
+        <main>
+            <div class="box box1" id="0"><span></span></div>
+            <div class="box box2" id="1"><span></span></div>
+            <div class="box box3" id="2"><span></span></div>
+            <div class="box box4" id="3"><span></span></div>
+            <div class="box box5" id="4"><span></span></div>
+            <div class="box box6" id="5"><span></span></div>
+            <div class="box box7" id="6"><span></span></div>
+            <div class="box box8" id="7"><span></span></div>
+            <div class="box box9" id="8"><span></span></div>
+        </main>
+
+        <div class="resetButton">
+            <button type="button" class="resetBtn">Reset Game</button>
+        </div>
+    </div>
+
+    <div class="congrats_section">
+        <div class="top_section">
+            <div class="congrats_img">
+                <img src="congratsImg.png" alt="" class="congratsImg">
+            </div>
+            <span id="contratsSpan">Congratulations</span>
+            <div class="congrats2_img">
+                <img src="congratsImg.png" alt="" class="congratsImg congratsImg2">
+            </div>
+        </div>
+        <div class="middle_section">
+            <span id="WonGame"></span>
+        </div>
+
+        <div class="bottm_section">
+            <button type="button" class="resetBtn">New Game</button>
+        </div>
+    </div>
+
+    <div class="gameOverContainer">
+        <img src="gameOver.png" alt="">
+         <div class="bottm_section">
+            <button type="button" class="resetBtn">New Game</button>
+        </div>
+    </div>
+</body>
+</html>
